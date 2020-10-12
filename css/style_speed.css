@@ -1,0 +1,183 @@
+.row{
+    display: flex;
+    width: 100%;
+}
+.row::after{
+    display: block;
+    clear: both;
+    content:"";
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+*{
+   box-sizing: border-box;
+}
+
+[class*=col-]{
+    padding: 15 px;
+    float: left;
+}
+
+
+
+
+body{
+    background-color: lightblue;
+}
+
+
+
+.all{
+    width:69%;
+    margin: auto;
+    background-color: lavender;
+    border: 2px solid blue;
+    height: unset;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+    box-shadow: 0px 3px 7px blue;
+    padding: 20px;
+}
+
+
+
+/* ######### text ######### */
+.text{
+    background-color: azure;
+    display: block;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+.input{
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 25px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    height: 25%;
+    background-color: white;
+    overflow: hidden;
+}
+
+/* ########## buttons ######### */
+
+
+.reload{
+    display: initial;
+    font-size: 15px;
+    background-color: palegreen;
+    border:2px solid green;
+    border-radius: 8px;
+    margin-left: 10px;
+    width: 100px;
+    cursor: pointer;
+    margin-top: 20px;
+    height: 30px;
+}
+.reload:hover{
+    box-shadow: 1px 2px green;
+}
+
+
+.cancel{
+    display: initial;
+    font-size: 15px;
+    background-color: lightcoral;
+    border: 2px solid red;
+    border-radius: 8px;
+    margin-right: 10px;
+    margin-top: 20px;
+    width: 100px;
+    cursor: pointer;
+    float: right;
+    height: 30px;
+}
+.cancel:hover{
+    box-shadow: 1px 2px red;
+}
+
+.reloadCancelbtns{
+    height: 70px;
+}
+
+
+.time{
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding:10px;
+    font-size:20px;
+    margin-top:15px;
+}
+
+.result{
+    margin: 20px 0;
+    padding: 0px;
+    display: none;
+    text-align: left;
+    background-color: azure;    
+}
+
+.correct, .incorrect, .timeTaken{
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+#retake{
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 5px 20px;
+    background-color: palegreen;
+    border: 2px solid green;
+}
+
+#retake:hover{
+    cursor: pointer;
+}
+
+.speed{
+    padding-left: 20px;
+}
+
+
+.image{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 680px){
+    .all{
+        width: 95%;
+    }
+
+    .image{
+        width: 100%;
+    }
+}
